@@ -1,0 +1,135 @@
+/* ====== Global ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ====== Navbar ====== */
+nav {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #dcdcdc;
+}
+/* Transisi navbar */
+nav {
+    transition: top 0.3s ease-in-out;
+}
+
+/* Class untuk sembunyikan navbar */
+nav.hide {
+    top: -100px; /* geser ke atas di luar layar */
+}
+
+/* ====== Header ====== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+header h1 {
+    margin: 15px 0 10px;
+    font-size: 2.5rem;
+}
+header p {
+    color: #555;
+    font-size: 1rem;
+}
+header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #007BFF;
+}
+
+/* ====== Section ====== */
+section {
+    background: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+section h2 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    border-left: 4px solid #007BFF;
+    padding-left: 10px;
+}
+section p, section li {
+    font-size: 1rem;
+    color: #555;
+}
+ul, ol {
+    margin-left: 20px;
+}
+li {
+    margin-bottom: 8px;
+}
+
+/* Kontak */
+section:last-child {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* ====== Responsive ====== */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 15px;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Alim Imamsyah</div>
+        <ul>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#keahlian">Keahlian</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <img src="gambar.jpg" alt="Foto Profil" class="profile-img">
+        <h1>Muhammad Alim Imamsyah</h1>
+        <p>Email: <a href="mailto:alimimam06@gmail.com">alimimam06@gmail.com</a></p>
+    </header>
+
+    <hr>
+
+    <!-- Tentang Saya -->
+    <section id="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seorang pengembang web yang menyukai desain bersih dan fungsional.</p>
+    </section>
+
+    <!-- Keahlian -->
+    <section id="keahlian">
+        <h2>Keahlian</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript Dasar</li>
+            <li>Desain Responsif</li>
+        </ul>
+    </section>
+
+    <!-- Proyek -->
+    <section id="proyek">
+        <h2>Proyek</h2>
+        <ol>
+            <li><strong>Website Portfolio</strong></li>
+            <li><strong>Aplikasi Kasir</strong></li>
+        </ol>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>089511453302</p>
+    </section>
+	
+	<script>
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.querySelector("nav");
+
+    window.onscroll = function() {
+        let currentScrollPos = window.pageYOffset;
+        if (prevScrollPos < currentScrollPos) {
+            // Scroll ke bawah -> sembunyikan navbar
+            navbar.classList.add("hide");
+        } else {
+            // Scroll ke atas -> tampilkan navbar
+            navbar.classList.remove("hide");
+        }
+        prevScrollPos = currentScrollPos;
+    }
+</script>
+
+</body>
+</html>
